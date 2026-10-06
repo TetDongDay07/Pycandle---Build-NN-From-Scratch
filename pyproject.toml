@@ -1,0 +1,19 @@
+[project]
+name = "pycandle"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nguyen Quoc Hieu", email = "baotramn926@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "graphviz>=0.21",
+]
+
+[project.scripts]
+build-nn-from-scratch = "build_nn_from_scratch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
